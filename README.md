@@ -78,6 +78,11 @@ We also provide all the dependencies in `environment.yaml`.
 
 Download models:
 ```
+sudo apt-get update && sudo apt-get install git-lfs
+git clone https://huggingface.co/camenduru/unianimate
+```
+OR
+```
 !pip install modelscope
 from modelscope.hub.snapshot_download import snapshot_download
 model_dir = snapshot_download('iic/unianimate', cache_dir='checkpoints/')
